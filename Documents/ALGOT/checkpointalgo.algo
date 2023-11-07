@@ -1,0 +1,26 @@
+ALGORITHM analyse des mots
+VAR
+    longueur, nombreMots, nombreVoyelle : INTEGER
+    phrase : STRING
+BEGIN
+    longueurPhrase <- 0
+    nombreMots <- 0
+    nombreVoyelle <- 0
+    
+
+    //Premettre à l/utilisateur d'enlevez une phrase se terminant par un point
+    AFFICHER "Entrez une phrase se terminant par un point (.)"
+    Lire phrase
+    //parcours chaque caractere de la phrase
+    POUR caractere de 1 à la longueur (phrase) 
+     longueur <- longueur+1
+    //verifier si le caractere est un voyelle
+    SI caractere <- " "
+        nombreMots <- nombreMots + 1 
+    FIN SI
+    SI caractere <-"a" ou caractere <-"o" ou caractere <-"u" ou caractere <-"i" ou caractere <-"y"
+        nombreVoyelle <- nombreVoyelle + 1
+    FIN SI
+    AFFICHE "voici un exemple de phrase"
+    FIN POUR
+END

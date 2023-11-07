@@ -1,0 +1,1 @@
+voici un cas pratique d'algorithm qui nous permet de lire une phrase en terminant par un point
